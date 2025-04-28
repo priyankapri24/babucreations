@@ -38,7 +38,7 @@ function Sidenav() {
           <button className="text-xl font-bold" onClick={() => setIsNavOpen(false)}>✕</button>
         </div>
 
-        <nav className="mt-10 flex flex-col gap-7 items-center font-medium">
+        <nav className="mt-10 flex flex-col gap-7 items-center font-medium" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' })}}>
           <Link to="/home" onClick={() => setIsNavOpen(false)}>Home</Link>
           {/* <Link to="/customize" onClick={() => setIsNavOpen(false)}>Customize</Link> */}
           <Link to="/productspage" onClick={() => setIsNavOpen(false)}>Products</Link>

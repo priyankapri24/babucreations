@@ -12,9 +12,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/babucreations', {
-  useNewUrlParser: true,
+// mongoose.connect('mongodb://localhost:27017/babucreations', {
+
+  mongoose.connect('mongodb+srv://iampriyankadevib24:Vr9zIK8wRnLB9wD6@babucreations.dqagnba.mongodb.net/babucreations', {
+    useNewUrlParser: true,
   useUnifiedTopology: true,
 })
 .then(() => console.log('✅ MongoDB Connected'))
